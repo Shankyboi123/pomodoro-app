@@ -5,8 +5,15 @@ html {
 
 h1 {
     color: aliceblue;
+    position: relative;
     padding-left: 3%;
-    font-size: 500%;
+    font-size: 600%;
+    top: -6%;
+    right: -6%;
+}
+
+header { 
+  position: relative;
 }
 
 #neon-white {
@@ -20,13 +27,26 @@ h1 {
     padding-left: 1em;
 }
 
+.bitcount-single-bit {
+  font-family: "Bitcount Single", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "CRSV" 0.5,
+    "ELSH" 0,
+    "ELXP" 0;
+}
+
+
 hr {
   border: none; /* remove default grey border */
   height: 3px;
-  width: 60%;
+  width: 30%;
   position: relative;
-  right: 22rem;
-  bottom: 3rem ;  
+  right: 33rem;
+  bottom: 13.5rem ;  
   background-color: #ffffff;    /* solid white line */
   box-shadow:
     0 0 6px #ffffff,
@@ -34,8 +54,9 @@ hr {
     0 0 20px #f0f;
 }
 
+
+
 .app-counter-box {
-  font-family: "Droid Sans Mono", monospace;
   font-size: 450%;
   position: relative;
   text-align: center;
@@ -51,11 +72,13 @@ hr {
     0 0 6px #ffffff,
     0 0 12px #f0f,
     0 0 20px #f0f; 
-    margin-left: 7%;
+    margin-left: 31.1%;
+    margin-top: -3.5%;
     display: flex;
     flex-direction: column;   /* stack timer + button */
     justify-content: center;  /* vertical center */
     align-items: center;
+    gap: 12px;
 }
 
 
@@ -73,12 +96,61 @@ button {
     border: none;
     background: none;
     outline: none;
-    color: #d8e9ef;
-    font-size: 200%;
+
+    font-size: 225%;
+    font-family: "Bitcount Single", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0,
+      "CRSV" 0.5,
+      "ELSH" 0,
+      "ELXP" 0;
+    color: #fff; /* White text color */
+    text-shadow:
+    0 0 6px #ffffff,
+    0 0 12px #f0f,
+    0 0 20px #f0f;
 }
 
 button:hover {
   color: #90c0d1;
+}
+
+.timer-actions {
+  display: flex;
+  gap: 18px;
+}
+
+.time-inputs {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 90%;
+  color: #d8e9ef;
+}
+
+.time-inputs label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.time-inputs input {
+  width: 70px;
+  padding: 4px 6px;
+  background: rgba(0, 0, 0, 0.3);
+  color: #d8e9ef;
+  border: 1px solid rgba(216, 233, 239, 0.6);
+  border-radius: 6px;
+  font-size: 90%;
+}
+
+.time-inputs .btn-set {
+  font-size: 120%;
 }
 
 html, body {
@@ -99,7 +171,6 @@ footer {
     margin-left: 10px;
     color: #ffffff;
 }
-
 
 
 
